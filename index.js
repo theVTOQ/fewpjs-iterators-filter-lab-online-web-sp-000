@@ -7,5 +7,8 @@ function findMatching(drivers, name){
 }
 
 function fuzzyMatch(drivers, leadingLetters){
-
+  const lengthToMatch = leadingLetters.length;
+  return drivers.filter(driver => {
+    return driver.slice(0, lengthToMatch) == leadingLetters;
+  });
 }
