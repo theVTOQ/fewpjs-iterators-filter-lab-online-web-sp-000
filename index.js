@@ -6,4 +6,6 @@ function findMatching(drivers, name){
   });
 }
 
-function
+function fuzzyMatch(drivers, leadingLetters){
+
+}
