@@ -12,3 +12,10 @@ function fuzzyMatch(drivers, leadingLetters){
     return driver.slice(0, lengthToMatch) == leadingLetters;
   });
 }
+
+function matchName(drivers, name){
+  //const matchingDrivers = [];
+  return drivers.filter(driver => {
+    return driver.name == name;
+  });
+}
